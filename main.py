@@ -25,7 +25,7 @@ def get_db():
         db.close()
 
 
-test_data = load_json_data("superbenchmark_db_data.json") if DEBUG else None
+test_data = load_json_data("test_database.json") if DEBUG else None
 
 
 @app.get("/results/average", response_model=AverageStatisticsSerializer)
